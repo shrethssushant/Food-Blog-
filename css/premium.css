@@ -1,0 +1,118 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Base */
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    padding: 40px 20px;
+  }
+  
+  /* Section */
+  .pricing-section {
+    padding-top: 100px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .pricing-section h1 {
+    font-size: 5.5rem;
+    margin-bottom: 40px;
+    color: #111;
+  }
+  
+  /* Cards */
+  .pricing-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+    padding: 30px;
+    width: 350px;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h2 {
+    font-size: 1.5rem;
+    color: #222;
+    margin-bottom: 10px;
+  }
+  
+  .card .price {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #e67e22;
+    margin-bottom: 20px;
+  }
+  
+  /* Features */
+  .features {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 25px;
+  }
+  
+  .features li {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+  
+  /* Button */
+  .card button {
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .card button:hover {
+    background-color: #cf711f;
+  }
+  
+  /* Popular Plan Highlight */
+  .card.popular {
+    border: 2px solid #e67e22;
+  }
+  
+  .card.popular .tag {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #e67e22;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .pricing-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }

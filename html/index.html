@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keyword" content="HTML,CSS" />
+    <link rel="icon" href="/images/Tab_logo.png" />
+    <meta name="description" content="Because One Recipe is Never Enough" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <title>One More Recipe</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar" id="navbar">
+        <div class="navbar_ent">
+          <a href="index.html"> Home </a>
+          <div class="dropdown">
+            <a href="#" class="dropbtn"> Recipe <span class="arrow">▼</span></a>
+            <div class="dropdown-content">
+              <a href="meals.html"> Meals </a>
+              <a href="momo.html"> Momo</a>
+              <a href="lightbites.html"> Light Bites</a>
+              <a href="drinks.html"> Drinks</a>
+            </div>
+          </div>
+          <a href="about_us.html"> About Us </a>
+          <a href="premium.html"> Premium </a>
+          <div class="search-container">
+            <input
+              type="text"
+              id="search-bar"
+              class="search-input"
+              placeholder="Search..."
+            />
+            <div id="suggestions" class="suggestions"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="titles">
+        <h1>One More Recipe</h1>
+        <p>Because One Recipe is Never Enough!</p>
+      </section>
+      <section class="main_img">
+        <a href="lightbites.html">
+          <div class="LightBites">
+            <img
+              src="/images/Home_main_img_Light-Bites.jpg"
+              alt=""
+              class="res-img-light-bites"
+            />
+            <p>Light Bites</p>
+          </div>
+        </a>
+        <div class="Meals">
+          <a href="meals.html">
+            <img
+              src="/images/recipe_meals_image/Veg_combo_meal.jpg"
+              alt=""
+              class="res-img-meal"
+            />
+            <p>Meals</p>
+          </a>
+        </div>
+        <div class="momo">
+          <a href="momo.html">
+            <img
+              src="/images/Home_main_img_momo.jpg"
+              alt="momo"
+              class="res-img-momo"
+            />
+            <p>Momo</p>
+          </a>
+        </div>
+        <a href="drinks.html">
+          <div class="Drinks">
+            <img
+              src="/images/Home_main_img_Drinks.png"
+              alt=""
+              class="res-img-drinks"
+            />
+            <p>Drinks</p>
+          </div>
+        </a>
+      </section>
+      <section class="Most-popular">
+        <h2>Most popular</h2>
+        <section class="Most-popular-centr">
+          <a href="/html/recipe_momo/recipe_momo_steam_chicken.html">
+            <div class="Most-popular-one">
+              <img
+                src="/images/recipe_momo/chicken_momo.jpg"
+                alt=""
+                class="Most-popular-img-one"
+              />
+              <p class="Most-popular-one-txt">
+                <strong>Chicken Momos</strong> juicy dumplings
+                <em
+                  >stuffed with spiced minced chicken, steamed to tender
+                  perfection.</em
+                >
+                Served with a
+                <span style="color: #d35400; font-weight: bold"
+                  >fiery dipping sauce</span
+                >
+                for a burst of bold flavor in every bite!
+              </p>
+            </div>
+          </a>
+          <a href="/html/recipe_Meals/recipe_Chicken_fry_rice.html">
+            <div class="Most-popular-two">
+              <img
+                src="/images/recipe_meals_image/Chicken_fry_rice.jpg"
+                alt=""
+                class="Most-popular-img-two"
+              />
+              <p class="Most-popular-two-txt">
+                <strong>Chicken fry rice</strong> is a
+                <em
+                  >savory dish featuring fluffy rice stir-fried with vibrant
+                  vegetables with chicken</em
+                >
+                <span style="color: #d35400; font-weight: bold"
+                  >peas, carrots, and bell peppers, seasoned with soy sauce and
+                  spices</span
+                >
+                for a flavorful and satisfying meal.
+              </p>
+            </div>
+          </a>
+
+          <a href="/html/recipe_Light_Bites/recipe_French_Fries.html">
+            <div class="Most-popular-three">
+              <img
+                src="/images/recipe_images/French_fries.jpg"
+                alt=""
+                class="Most-popular-img-three"
+              />
+              <p class="Most-popular-three-txt">
+                <strong>Golden, crispy French fries</strong> are a
+                <em>delightful snack</em> made from thinly sliced potatoes,
+                <span style="color: #d35400; font-weight: bold"
+                  >fried to perfection</span
+                >
+                and lightly salted, offering a <em>satisfying crunch</em> with
+                every bite.
+              </p>
+            </div>
+          </a>
+        </section>
+      </section>
+
+      <section class="footer">
+        <h1 class="footer_title">One More Recipe</h1>
+        <p>&#169; 2025 One More Recipe. All Rights Reserved</p>
+      </section>
+    </main>
+    <script src="/jsfile/script.js"></script>
+    <script src="/jsfile/searchhome.js"></script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keyword" content="HTML,CSS" />
+    <link rel="icon" href="/images/Tab_logo.png" />
+    <link rel="stylesheet" href="/css/reciepe_style.css" />
+    <link rel="stylesheet" href="/css/index_style.css" />
+    <title>Lemonade - One More Recipe</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar" id="navbar">
+        <div class="navbar_ent">
+          <a href="/html/index.html"> Home </a>
+          <div class="dropdown">
+            <a href="#" class="dropbtn"> Recipe <span class="arrow">▼</span></a>
+            <div class="dropdown-content">
+              <a href="/html/meals.html"> Meals </a>
+              <a href="/html/momo.html"> Momo</a>
+              <a href="/html/lightbites.html"> Light Bites</a>
+              <a href="/html/drinks.html"> Drinks</a>
+            </div>
+          </div>
+          <a href="/html/about_us.html"> About Us </a>
+          <div class="search-container">
+            <input
+              type="text"
+              id="search-bar"
+              class="search-input"
+              placeholder="Search..."
+            />
+            <div id="suggestions" class="suggestions"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="titles">
+      <h1>Lemonade</h1>
+    </section>
+
+    <div class="recipe-container">
+      <div class="recipe-header">
+        <img
+          src="/images/recipe_drinks/Lemonade.jpg"
+          alt="Veg combo meal"
+        />
+        <p class="recipe-description">
+          <strong>Lemonade</strong> is a refreshing and tangy beverage made from
+          fresh lemon juice, water, and sugar.
+          <em>It's the perfect drink for hot summer days</em> or whenever you
+          need a sweet and citrusy pick-me-up.
+          <span style="color: #d35400; font-weight: bold"
+            >Whether served chilled over ice or garnished with mint or fruit,
+            lemonade is a timeless favorite</span
+          >
+          enjoyed by people of all ages.
+        </p>
+      </div>
+
+      <div class="recipe-content">
+        <div class="ingredients">
+          <h2>Ingredients</h2>
+          <br />
+          <ul>
+            <li>
+              <strong>Fresh lemons</strong> – 4 (for about 1 cup of juice)
+            </li>
+            <br />
+            <li><strong>Sugar</strong> – 1 cup (adjust to taste)</li>
+            <br />
+            <li>
+              <strong>Water</strong> – 4 cups (divided into 2 cups of hot water
+              and 2 cups of cold water)
+            </li>
+            <br />
+            <li><strong>Ice cubes</strong> – For serving</li>
+            <br />
+            <li><strong>Fresh mint leaves</strong> – Optional, for garnish</li>
+          </ul>
+          <p style="margin-top: 10px">
+            <strong><em>Tip:</em></strong> For a twist, add a few slices of
+            fresh ginger or cucumber to your lemonade.
+          </p>
+        </div>
+
+        <div class="instructions">
+          <h2>Instructions</h2>
+          <br />
+          <ol>
+            <li>
+              <strong>Juice the lemons:</strong> Roll the lemons on the counter
+              to make them juicier, then cut them in half and squeeze out the
+              juice into a bowl. You should get about 1 cup of fresh lemon
+              juice.
+            </li>
+            <br />
+            <li>
+              <strong>Dissolve the sugar:</strong> In a separate bowl or
+              pitcher, combine the sugar with the 2 cups of hot water. Stir
+              until the sugar is completely dissolved.
+            </li>
+            <br />
+            <li>
+              <strong>Mix the lemonade:</strong> Add the fresh lemon juice to
+              the sugar-water mixture, then stir in the 2 cups of cold water.
+            </li>
+            <br />
+            <li>
+              <strong>Chill and serve:</strong> Fill glasses with ice cubes and
+              pour the lemonade over. Garnish with mint leaves if desired.
+              Enjoy!
+            </li>
+          </ol>
+          <p style="margin-top: 10px">
+            <strong><em>Chef's Tip:</em></strong> If you prefer a less sweet
+            lemonade, reduce the sugar or substitute it with honey or agave
+            syrup.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section class="footer">
+      <h1 class="footer_title">One More Recipe</h1>
+      <p>&#169; 2025 One More Recipe. All Rights Reserved</p>
+    </section>
+    <script src="/jsfile/script.js"></script>
+    <script src="/jsfile/search.js"></script>
+  </body>
+</html>

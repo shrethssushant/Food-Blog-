@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Inspiration';
+    src: url('../fonts/Inspiration-Regular.ttf') format('truetype');
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fce5c2;
+    margin: 0;
+    padding: 0;
+}
+
+.short-break {
+    display: block;
+    height: 5px;
+    content: "";
+}
+.recipe-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Inspiration', sans-serif;
+    margin-top: 20px;
+    color: #454545; 
+}
+
+.navbar a:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.recipe-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fdf9f2;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 2px solid #ffe6d5;
+    padding-bottom: 20px;
+}
+
+.recipe-description {
+    background: #fce5c2; 
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.recipe-header img {
+    width: 300px; 
+    height: 250px;
+    border-radius: 15px;
+    object-fit: cover;
+    border: 3px solid #6d31031b;
+}
+
+.recipe-content {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    background: #fce5c2; 
+    border-radius: 10px;
+}
+
+.ingredients, .instructions {
+    flex: 1;
+    background: #fce5c2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 6px 10px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #3c3c3c; 
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 20px;
+}
+.footer {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem; 
+    color: #020202; 
+    text-align: center;
+}
+.footer_title, h1 {
+    font-family: 'Inspiration', sans-serif;
+    font-size: 3rem; 
+}
+
+@media (max-width: 768px) {
+    .footer_title, h1 {
+        font-size: 2rem; 
+    }
+}

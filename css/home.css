@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-VariableFont_opsz\,wght.ttf');
+}
+
+@font-face {
+    font-family: 'Inspiration';
+    src: url('../fonts/Inspiration-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Indieflower';
+    src: url('../fonts/IndieFlower-Regular.ttf') format('truetype');
+}
+body { /** for the background in home**/
+    background-image: url('/images/Home_background.png'); 
+    background-size:contain;
+    background-repeat: no-repeat; 
+    object-fit: cover;
+    
+}
+.header {
+    height: 60px;
+}
+.navbar { /*nav bar settings*/
+    width: 100%;
+    height: 60px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    padding: 0 5%;
+    z-index: 1000; 
+    transition: top 0.25s;
+}
+
+.navbar_ent { /*to change navbar entity alignements */
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 100%;
+    max-width: 1200px; 
+}
+
+.navbar a { /*changes the nav bar elements*/
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem; 
+    margin: 0 20px; 
+    padding: 10px;
+}
+.navbar a:hover { 
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.search-container { /* settings for search container */
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex: 1;
+    min-width: 50px; 
+    max-width: 300px; 
+    
+}
+
+.search-input { /* setting for how the txt in the searh bar apears*/
+    font-family: 'Inter', sans-serif;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 25px;
+    flex: 1;
+    font-size: 1rem;
+    min-width: 50px; 
+    max-width: 300px;
+    background-color: #ffffff;
+    border: 1px solid #000;
+}
+
+.suggestions { /* setting for sugesstion drop box */
+    border-radius: 25px; 
+    background-color: #ffffff00; 
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    max-height: 150px;
+    overflow-y: auto;
+    display: none; 
+    box-shadow: 0 0 10px #ffffff80; 
+    top: 100%; 
+    left: 0;
+}
+
+.suggestion-item { /*changes how the txt in suggestion appears*/
+    padding: 12px 16px; 
+    cursor: pointer;
+    color: #000000; 
+    text-decoration: none;}
+
+.suggestion-item:hover {
+  background-color: #dddcdc;
+    border-radius: 25px;
+}
+
+.dropdown { 
+    position: relative;
+}
+
+.dropbtn { /*decoration of dropdown button*/
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+}
+
+.arrow {
+    margin-left: 5px;
+}
+
+.dropdown-content { /*styles how the dropdown content appears*/
+    border-radius: 25px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    position: absolute;
+    background-color: #ffffff00;
+    min-width: 165px;
+    box-shadow: 0 0 10px #505050;
+    z-index: 1;
+    margin-top: 5px;
+}
+
+.dropdown:focus-within .dropdown-content {
+    max-height: 200px;
+}
+
+.dropdown-content a { /*changes how the drop down content appears*/
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: #ffffff00;
+    border-bottom: 1px solid #747272;
+}
+
+.dropdown-content a:hover {
+    border-radius: 25px;
+    background-color: #dddcdc;
+}
+
+/*=============================================TITLE=============================================*/
+.main { /*addes padding on top of title or contls height of title*/
+    padding-top: 60px;
+}
+
+.titles { /*title settings*/
+    padding-top: 8rem;
+    text-align: center;
+    margin-bottom: 30%;
+}
+
+.titles h1 { /*h1 font size and style*/
+    font-family: 'Inspiration', sans-serif;
+    font-size: 6rem; 
+}
+
+.titles p { /* changes the sub titles*/
+    font-family: 'Indieflower', sans-serif;
+    font-size: 1.5rem; 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar_ent {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .navbar a {
+        margin: 5px 0; /* Space between links */
+    }
+
+    .search-container {
+        width: 100%; 
+        margin-top: 10px; 
+    }
+
+    .titles h1 {
+        font-size: 4rem; 
+    }
+    .titles p {
+        font-size: 1.2rem; 
+    }
+}
+
+/*=============================================MAIN 4 IMAGES=============================================*/
+.main_img { /*setting for main sections*/
+    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 100%;
+
+}
+
+.main_img p { /* Caption settings */
+    font-family: 'Indieflower', sans-serif;
+    font-size:2rem; 
+    margin-top: 10px; 
+    color: #000000; 
+}
+a{
+     text-decoration: none;
+}
+
+.Meals, .momo, .LightBites, .Drinks { 
+    text-align: center; 
+    margin: 20px;
+}
+
+.Meals:hover,.momo:hover , .LightBites:hover, .Drinks:hover {
+ transform: scale(110%) translateY(10px);
+ transition: transform 0.5s ease;
+}
+
+.res-img-meal,.res-img-momo, .res-img-light-bites, .res-img-drinks { /*image settings for the sections*/
+    width: 17rem; 
+    height: 20rem; 
+    border-radius: 2rem;
+    object-fit: cover;
+}
+
+/*=============================================MOST POPULAR=============================================*/
+.Most-popular { /*controls the most popular sections*/
+    margin-top: 5rem;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.Most-popular h2 { /*style the title of most popular*/
+    font-family: 'Indieflower', sans-serif;
+    font-size: 4rem; 
+    margin-bottom: 1rem;
+}
+
+.Most-popular-centr { 
+    margin: 0 5%;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.Most-popular{ 
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.Most-popular-one,
+.Most-popular-two,
+.Most-popular-three { /*settings for most popular */
+    border-bottom: 1px solid lightgray;
+    display: flex; 
+    align-items: center; 
+    padding: 1rem; 
+    max-width: 100%; 
+    box-sizing: border-box; 
+}
+
+.Most-popular-one:hover,
+.Most-popular-two:hover,
+.Most-popular-three:hover {
+    transform: scale(110%);
+    transition: .5s;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+ }
+
+.Most-popular-img-one,
+.Most-popular-img-two,
+.Most-popular-img-three { /*setting for most popular images*/
+    height: 15rem;
+    width: 15rem;
+    border-radius: 25px;
+    margin-right: 1rem; 
+}
+
+.Most-popular-one-txt,
+.Most-popular-two-txt,
+.Most-popular-three-txt { /*setting for most poular text*/
+    font-size: 1.5rem; 
+    flex: 1; 
+    text-align: justify;
+    margin: 0; 
+    padding: 0.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+}
+
+/* Optional: Allow text to wrap if you want it to be more responsive */
+.Most-popular-one-txt,
+.Most-popular-two-txt,
+.Most-popular-three-txt {
+    white-space: normal;
+}
+
+/*=============================================FOOTER=============================================*/
+.footer { /*footer settings*/
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem; 
+    color: #020202; 
+    text-align: center;
+}
+.footer_title, h1 { /*fonts for footer*/
+    font-family: 'Inspiration', sans-serif;
+    font-size: 3rem; 
+}
+
+/* Responsive footer styles */
+@media (max-width: 768px) {
+    .footer_title, h1 {
+        font-size: 2rem; 
+    }
+}
