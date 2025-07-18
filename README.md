@@ -69,6 +69,7 @@ Don't forget to give the project a star! Thanks again!
 <strong>Team Members:</strong><br>
 -Neevan Bajracharya (Frame for website)<br>
 -Subham Kharel (web designer)<br>
+-Sushant Shrestha (Features)<br>
 -Veeraj Pathak <br>
 
 <strong>Contact</strong>
